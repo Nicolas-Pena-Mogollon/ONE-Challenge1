@@ -19,22 +19,24 @@
         
         <main>
             <section class="encriptador">
-                <textarea id="textinput" class="input-padron" placeholder="Ingrese el texto aquí" required></textarea>
+                <textarea class="input-padron" placeholder="Ingrese el texto aquí" required></textarea>
                 <img class="vector" src="img/Vector.png"><p class="textinfo">Solo letras minúsculas y sin acentos</p>
                 <div class="botones">
-                    <button class="encriptar">Encriptar</button>
-                    <button class="desencriptar">Desencriptar</button>
+                    <button onclick= "encript()" class="encriptar">Encriptar</button>
+                    <button onclick= "decript()" class="desencriptar">Desencriptar</button>
                 </div>
             </section>
 
             <section class="display">
-                <div class="image">
+                <div class="display-text">
                     <img src="img/Boy.png">
                     <h2>Ningún mensaje fue encontrado</h2>
                     <br>
                     <p>Ingresa el texto que deseas encriptar o desencriptar</p>
                 </div>
+                <button class="copy">Copiar</button>
             </section>
         </main>
+        <script src="/script.js"></script>
     </body>
 </html>
